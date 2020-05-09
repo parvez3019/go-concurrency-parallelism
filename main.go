@@ -20,25 +20,29 @@ func main() {
 	// main -> go routine -> simple will be to add time.second
 	// wait groups
 
-	//listOfSites := []string{
-	//	"www.google.com",
-	//	"www.facebook.com",
-	//	"www.amazon.com",
-	//	"www.stackoverflow.com",
-	//	"www.linkedin.com",
-	//	"www.github.com",
-	//	"jigsaw.thoughtworks.net",
-	//}
+	// Concurreny example - website response
+	// Parallelism - calculate fibonnaci sum of numbers
+
+
+	listOfSites := []string{
+		"jigsaw.thoughtworks.net",
+		"www.google.com",
+		"www.facebook.com",
+		"www.amazon.com",
+		"www.stackoverflow.com",
+		"www.linkedin.com",
+		"www.github.com",
+	}
 
 	runtime.GOMAXPROCS(1)
 	var wg sync.WaitGroup
 	start := time.Now()
 
-	a := []int{5, 10, 25, 35, 44, 45, 1}
-	for _, site := range a {
+	//a := []int{5, 10, 25, 35, 44, 45, 1}
+	for _, site := range listOfSites {
 		wg.Add(1)
-		//go get(&wg, site)
-		go fib(&wg, site)
+		go get(&wg, site)
+		//go fib(&wg, site)
 	}
 	wg.Wait()
 
