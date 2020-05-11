@@ -14,25 +14,25 @@ func elapsed(what string) func() {
 
 func RunRestaurant() {
 	defer elapsed("page")()
-	//runtime.GOMAXPROCS(1)
-	jobs := make(chan int, 50)
-	results := make(chan int, 50)
+	jobs := make(chan int, 45)
+	results := make(chan int, 45)
 
+	//runtime.GOMAXPROCS(1)
 	go workers(jobs, results) //9.71276541s
 	go workers(jobs, results) //5.887356294s
 	go workers(jobs, results) //4.810860706s
 	go workers(jobs, results) //4.463969722s
-	go workers(jobs, results) //4.182831529s
+	//go workers(jobs, results) //4.182831529s
 	//go workers(jobs, results) //4.07890426s
 	//go workers(jobs, results) //3.962344255s
 	//go workers(jobs, results) //3.792776172s
 
-	for i := 0; i < 50; i++ {
+	for i := 0; i < 45; i++ {
 		jobs <- i
 	}
 	close(jobs)
 
-	for j := 0; j < 50; j++ {
+	for j := 0; j < 45; j++ {
 		fmt.Println(<-results)
 	}
 

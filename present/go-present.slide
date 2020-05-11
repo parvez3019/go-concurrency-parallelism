@@ -1,0 +1,24 @@
+Concurreny & Parallelism in Go 
+Parvez Hassan & Sayan Chakraborty
+
+* Agenda :
+- Brief introduction to Go
+- Understand goroutines, waitgroups, mutexes & channels.
+- High level overview of the Golang scheduler
+- Understanding concurrency and parallelism with the help of programs and visualisation
+- Gotchas of writing concurrent/parallel programs
+- Success stories
+
+* Slide sections
+
+Slide sections are shown the asterisks.
+
+- A single asterisk denotes the title of the slide or section.
+- Double asterisks denotes a subsection.
+- Triple asterisks denotes a subsubsection.
+
+* A Brief Introduction To Golang
+Let's do some basic stuff.
+
+.code example.go
+
