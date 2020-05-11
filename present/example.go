@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Lockdown is going to extend for two more weeks")
+	fmt.Println("You day is gonna be same as today! #2020Sucks")
 }

@@ -9,16 +9,104 @@ Parvez Hassan & Sayan Chakraborty
 - Gotchas of writing concurrent/parallel programs
 - Success stories
 
-* Slide sections
+* Some basic stuff in Go
+Let's print your tomorrow's Horoscope.
 
-Slide sections are shown the asterisks.
+.play example.go
 
-- A single asterisk denotes the title of the slide or section.
-- Double asterisks denotes a subsection.
-- Triple asterisks denotes a subsubsection.
+* Some basic stuff in Go
+Varible intialization
 
-* A Brief Introduction To Golang
-Let's do some basic stuff.
+.play basicVariable.go /START OMIT/,/END OMIT/
 
-.code example.go
+* Some basic stuff in Go
+Arrays & Slices 
+
+.play arrays.go /START OMIT/,/END OMIT/
+
+* Some basic stuff in Go
+If-Else & For loop 
+
+.play if-else.go /START OMIT/,/END OMIT/
+
+* Now let's start
+Let's try to hit these websites and print the response in console.
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Go Routines
+Let's try to call these websites in go routines
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Go Routines 
+Adding sleep to main
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Wait groups
+Adding wait groups
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Mutexes
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Channels
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* The Go Scheduler
+- Basic stuff about the Go Scheduler.
+
+* Understanding Concurrency And Parallelism
+
+* What is  Concurrency? :
+- Dealing with a lot of things at the same time.
+- It is more about the structure of your program.
+- Has nothing to do with number of cores in a system.
+
+* Example (Concurrency)
+
+.play basicVariable.go
+
+* What is  Parallelism? 
+- Doing a lot of things at the same time.
+- Can only be achieved in multi core systems.
+- E.g - Coding and listening to music at the same time.
+
+* Example (Parallelism)
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* Concurrency with parallelism
+Content.
+
+* Example (Concurrency with parallelism)
+
+.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+* So when should we use what?
+- It depends.
+- For CPU heavy tasks use parallelism.
+- For network/IO heavy tasks use concurrency.
+- There is no silver bullet.
+
+* Gotchas of Concurrent/Parallel programs
+- Spawning many goroutines will not always give you better performance.
+- Shared memory for local variables.
+
+* Success Stories
+- Story 1
+- Story 2
+
+
+
+
+
+
+
+
+
 
