@@ -1,5 +1,9 @@
-Concurreny & Parallelism in Go 
-Parvez Hassan & Sayan Chakraborty
+*
+
+
+* 
+
+.background titles/title.png
 
 * Agenda :
 - Brief introduction to Go
@@ -8,6 +12,11 @@ Parvez Hassan & Sayan Chakraborty
 - Understanding concurrency and parallelism with the help of programs and visualisation
 - Gotchas of writing concurrent/parallel programs
 - Success stories
+
+*
+
+.background titles/briefintro.png
+
 
 * Some basic stuff in Go
 Let's print your tomorrow's Horoscope.
@@ -34,6 +43,11 @@ Let's try to hit these websites and print the response in console.
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
+
+*
+
+.background titles/goroutines.png
+
 * Go Routines
 Let's try to call these websites in go routines
 
@@ -44,23 +58,42 @@ Adding sleep to main
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
+*
+
+.background titles/wait.png
+
 * Wait groups
 Adding wait groups
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
+
+*
+
+.background titles/mutex.png
+
 * Mutexes
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+
+*
+
+.background titles/channels.png
 
 * Channels
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
+*
+
+.background titles/scheduler.png
+
 * The Go Scheduler
 - Basic stuff about the Go Scheduler.
 
-* Understanding Concurrency And Parallelism
+*
+
+.background titles/understanding.png
 
 * What is  Concurrency? :
 - Dealing with a lot of things at the same time.
@@ -93,13 +126,42 @@ Content.
 - For network/IO heavy tasks use concurrency.
 - There is no silver bullet.
 
-* Gotchas of Concurrent/Parallel programs
-- Spawning many goroutines will not always give you better performance.
-- Shared memory for local variables.
 
-* Success Stories
-- Story 1
-- Story 2
+*
+
+.background titles/gotachas.png
+
+* Gotchas of Concurrent/Parallel programs
+- Spawning many goroutines will *not* always give you better performance
+- Shared memory for local variables can lead to undesired state
+- Cooperative scheduling can starve goroutines
+- Increasing GOMAXPROCS value does *not* mean your code will run faster
+- Goroutine leaks
+
+*
+
+.background titles/success.png
+
+*
+
+.image success/uber.png 600 800
+
+*
+
+.image success/twitch.png 600 1000
+
+* 
+
+.image success/twitter.png 600 1000
+
+* 
+
+.image micdrop.png 600 600
+
+
+*
+
+.background titles/thankyou.png
 
 
 
