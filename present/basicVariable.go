@@ -5,18 +5,21 @@ import "fmt"
 func main() {
 	// START OMIT
 	// Mutiple ways to initialise a variable
-	var a int // Creating a variable a of type int
-	a = 5
-	fmt.Printf("Printing a = %d\n", a)
+	sadnessLevel := 2020 // or var a int
+	fmt.Printf("On a scale of 0-10, how sad are you today? \nMe - %d", sadnessLevel)
 
-	// Creating and initialising a variable
-	b := 5 
-	fmt.Printf("Printing b = %d\n", b)
+	// Arrays
+	randomArray := [5]int{10, 20, 30, 40, 50}   // Intialized with values
+	var anotherRandomArray [5]int = [5]int{10, 20, 30} // Partial assignment
 
+	fmt.Println(randomArray, anotherRandomArray)
 
-	// Creating an string
-	s := "2020"
-	fmt.Printf("On a scale of 0-10, how sad are you today? \nMe - %s", s)
+	// Slices
+	slice := []int{}
+	fmt.Println(slice)
+	slice = append(slice, 5)
+	fmt.Println(slice)
+
 	// END OMIT
 
 }

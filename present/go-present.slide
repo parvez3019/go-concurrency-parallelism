@@ -29,11 +29,6 @@ Varible intialization
 .play basicVariable.go /START OMIT/,/END OMIT/
 
 * Some basic stuff in Go
-Arrays & Slices 
-
-.play arrays.go /START OMIT/,/END OMIT/
-
-* Some basic stuff in Go
 If-Else & For loop 
 
 .play if-else.go /START OMIT/,/END OMIT/
