@@ -2,3 +2,4 @@
 *.iml
 go-cuncurrency
 .DS_Store
+/.idea/
