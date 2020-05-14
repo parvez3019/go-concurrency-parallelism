@@ -1,7 +1,7 @@
 *
 
 
-* 
+*
 
 .background titles/title.png
 
@@ -29,7 +29,7 @@ Varible intialization
 .play basicVariable.go /START OMIT/,/END OMIT/
 
 * Some basic stuff in Go
-If-Else & For loop 
+If-Else & For loop
 
 .play if-else.go /START OMIT/,/END OMIT/
 
@@ -44,14 +44,14 @@ Let's try to hit these websites and print the response in console.
 .background titles/goroutines.png
 
 * Go Routines
-Let's try to call these websites in go routines
+A goroutine is a lightweight thread managed by the Go runtime.
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play goroutines.go /START OMIT/,/END OMIT/
 
-* Go Routines 
+* Go Routines
 Adding sleep to main
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play goroutines-sleep.go /START OMIT/,/END OMIT/
 
 *
 
@@ -60,7 +60,7 @@ Adding sleep to main
 * Wait groups
 Adding wait groups
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play WaitGroup.go /START OMIT/,/END OMIT/
 
 
 *
@@ -69,7 +69,7 @@ Adding wait groups
 
 * Mutexes
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play mutex.go /START OMIT/,/END OMIT/
 
 *
 
@@ -99,7 +99,7 @@ Adding wait groups
 
 .play basicVariable.go
 
-* What is  Parallelism? 
+* What is  Parallelism?
 - Doing a lot of things at the same time.
 - Can only be achieved in multi core systems.
 - E.g - Coding and listening to music at the same time.
@@ -145,11 +145,11 @@ Content.
 
 .image success/twitch.png 600 1000
 
-* 
+*
 
 .image success/twitter.png 600 1000
 
-* 
+*
 
 .image micdrop.png 600 600
 
@@ -157,13 +157,3 @@ Content.
 *
 
 .background titles/thankyou.png
-
-
-
-
-
-
-
-
-
-
