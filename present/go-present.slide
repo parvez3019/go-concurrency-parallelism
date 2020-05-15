@@ -62,22 +62,26 @@ Adding wait groups
 
 .play WaitGroup.go /START OMIT/,/END OMIT/
 
-
 *
 
 .background titles/mutex.png
 
 * Mutexes
+A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running the critical section of code at any point of time to prevent race condition from happening.
 
 .play mutex.go /START OMIT/,/END OMIT/
+.image race.png 200 800
 
 *
 
 .background titles/channels.png
 
 * Channels
+Channels Channels are the pipes that connect concurrent goroutines.
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.code channels.go /START OMIT/,/END OMIT/
+
+.play channels2.go /START OMIT/,/END OMIT/
 
 *
 
@@ -97,7 +101,7 @@ Adding wait groups
 
 * Example (Concurrency)
 
-.play basicVariable.go
+.play pingpong.go /START OMIT/,/END OMIT/
 
 * What is  Parallelism?
 - Doing a lot of things at the same time.
@@ -106,7 +110,7 @@ Adding wait groups
 
 * Example (Parallelism)
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play fib.go /START OMIT/,/END OMIT/
 
 * Concurrency with parallelism
 Content.

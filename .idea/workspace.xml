@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f2558dc-8121-48eb-b8a1-9c9f65d0f935" name="Default Changelist" comment="" />
+    <list default="true" id="7f2558dc-8121-48eb-b8a1-9c9f65d0f935" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/present/channels2.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/fib.go" beforeDir="false" afterPath="$PROJECT_DIR$/present/fib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/go-present.slide" beforeDir="false" afterPath="$PROJECT_DIR$/present/go-present.slide" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/goroutines-sleep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/mutex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/mutex.go" beforeDir="false" afterPath="$PROJECT_DIR$/present/mutex.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/pingpong.go" beforeDir="false" afterPath="$PROJECT_DIR$/present/pingpong.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/present/waitGroup" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,21 +39,33 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/present" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/present" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="go build go-conurrency" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build pingpong.go">
+    <configuration name="go build channels2.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="go-conurrency" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/present/channels2.go" />
+      <package value="go-conurrency" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build go-conurrency" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="go-conurrency" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
@@ -51,9 +73,29 @@
       <package value="go-conurrency" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="go-conurrency" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/main.go" />
+      <package value="go-conurrency" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build pingpong.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
+      <module name="go-conurrency" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/present/channels.go" />
+      <package value="go-conurrency/present" />
+      <directory value="$PROJECT_DIR$/" />
+      <output_directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build go-conurrency" />
+        <item itemvalue="Go Build.go build pingpong.go" />
+        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -66,26 +108,60 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="640" y="365" key="#Go_Modules" timestamp="1589560403270">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="640" y="365" key="#Go_Modules/0.0.1680.1050@0.0.1680.1050" timestamp="1589560403270" />
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589562536943">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1589562536943" />
     <state x="526" y="172" key="#go_build_go-conurrency" timestamp="1588877823921">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="526" y="172" key="#go_build_go-conurrency/0.0.1680.1050@0.0.1680.1050" timestamp="1588877823921" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1589045654758">
+    <state x="526" y="172" key="#go_build_go-conurrency/present" timestamp="1589562503129">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589045654758" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1589045654757">
+    <state x="526" y="172" key="#go_build_go-conurrency/present/0.0.1680.1050@0.0.1680.1050" timestamp="1589562503129" />
+    <state x="526" y="172" key="#go_build_pingpong.go" timestamp="1589562556230">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589045654757" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1589045654757">
+    <state x="526" y="172" key="#go_build_pingpong.go/0.0.1680.1050@0.0.1680.1050" timestamp="1589562556230" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1589562558378">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589045654757" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1589045654757">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1589562558378" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1589562558377">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589045654757" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1589562558377" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1589562558376">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1589562558376" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1589562558377">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1589562558377" />
+    <state x="633" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1589562677453">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="633" y="221" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1589562677453" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/present/pingpong.go</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

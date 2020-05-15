@@ -4,6 +4,7 @@ import (
 	"time"
 )
 
+// START OMIT
 func main() {
 	var Ball int
 	table := make(chan int)
@@ -24,3 +25,4 @@ func player(table chan int) {
 		table <- ball
 	}
 }
+// END OMIT

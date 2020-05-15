@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-
+	// START OMIT
 	var wg sync.WaitGroup
 	start := time.Now()
 
@@ -18,8 +18,8 @@ func main() {
 		go fib(&wg, site)
 	}
 	wg.Wait()
-
 	fmt.Printf("time elapsed %v \n", time.Since(start))
+	// END OMIT
 }
 
 func fib(s *sync.WaitGroup, site int) {
