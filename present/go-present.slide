@@ -48,12 +48,18 @@ A goroutine is a lightweight thread managed by the Go runtime.
 
 .play goroutines.go /START OMIT/,/END OMIT/
 
+*
+Let's wait for go routines to finish.
+
+.play goroutines-sleep.go /START OMIT/,/END OMIT/
+
 
 *
 
 .background titles/wait.png
 
 *
+To wait for multiple goroutines to finish, we can use a wait group.
 
 .play WaitGroup.go /START OMIT/,/END OMIT/
 

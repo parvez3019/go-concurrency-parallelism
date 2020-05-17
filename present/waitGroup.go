@@ -8,17 +8,11 @@ import (
 )
 // START OMIT
 func main() {
-	sites := []string {
-		"www.google.com",
-		"www.facebook.com",
-		"www.thoughtworks.com",
-		"www.github.com",
-	}
+	sites := []string {"google", "facebook", "thoughtworks", "github"}
 
 	var wg sync.WaitGroup
 
 	start := time.Now()
-
 	for _, site := range sites {
 		wg.Add(1)
 		go printResponse(site, &wg)
@@ -29,7 +23,7 @@ func main() {
 
 func printResponse(site string, wg *sync.WaitGroup) {
 	defer wg.Done()
-	res, _ := http.Get("https://" + site)
+	res, _ := http.Get("https://" + site + ".com")
 	fmt.Printf("%s response -> %d \n", site, res.StatusCode)
 }
 // END OMIT
