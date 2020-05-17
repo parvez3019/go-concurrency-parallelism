@@ -109,8 +109,8 @@ Channels can be thought as pipes through which goroutines communicate.
 .background titles/understanding.png
 
 * Recap of Concurrency
-- Dealing with a lot of things at the same time.
-- It is more about the structure of your program.
+- Dealing with a lot of things at the same time
+- It is more about the structure of your program
 - Can use one or more CPU cores
 
 * Example (Concurrency)
@@ -122,9 +122,9 @@ Channels can be thought as pipes through which goroutines communicate.
 .image titles/conc_latest.gif
 
 * Recap of Parallelism
-- Doing a lot of things at the same time.
-- Can only be achieved in multi core systems (unless hyper-threading is enabled).
-- E.g - Coding and listening to music at the same time.
+- Doing a lot of things at the same time
+- Can only be achieved in multi core systems (unless hyper-threading is enabled)
+- E.g - Coding and listening to music at the same time
 
 * Example (Parallelism)
 
@@ -140,9 +140,8 @@ Channels can be thought as pipes through which goroutines communicate.
 
 * So when should we use what?
 - There is no silver bullet, it depends on the problem you're solving
-- For CPU heavy tasks use parallelism.
-- For network/IO heavy tasks use concurrency.
-- There is no silver bullet.
+- For CPU heavy tasks use parallelism
+- For network/IO heavy tasks use concurrency
 
 
 *
