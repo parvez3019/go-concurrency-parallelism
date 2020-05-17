@@ -43,7 +43,7 @@ Let's try to hit these websites and print the response in console.
 
 .background titles/goroutines.png
 
-* Go Routines
+* 
 A goroutine is a lightweight thread managed by the Go runtime.
 
 .play goroutines.go /START OMIT/,/END OMIT/
@@ -53,8 +53,7 @@ A goroutine is a lightweight thread managed by the Go runtime.
 
 .background titles/wait.png
 
-* Wait groups
-Adding wait groups
+*
 
 .play WaitGroup.go /START OMIT/,/END OMIT/
 
@@ -101,7 +100,7 @@ Channels Channels are the pipes that connect concurrent goroutines.
 
 * What is  Parallelism?
 - Doing a lot of things at the same time.
-- Can only be achieved in multi core systems.
+- Can only be achieved in multi core systems (unless hyper-threading is enabled).
 - E.g - Coding and listening to music at the same time.
 
 * Example (Parallelism)
