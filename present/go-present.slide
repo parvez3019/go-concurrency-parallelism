@@ -98,7 +98,7 @@ Channels can be thought as pipes through which goroutines communicate.
 * Recap of Concurrency
 - Dealing with a lot of things at the same time.
 - It is more about the structure of your program.
-- Has nothing to do with number of cores in a system.
+- Can use one or more CPU cores
 
 * Example (Concurrency)
 
