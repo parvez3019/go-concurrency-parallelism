@@ -18,7 +18,7 @@ func main() {
 }
 
 func printResponse(site string) {	
-	res, _ := http.Get("https://" + site + ".com")
+	res, _ := http.Get("https://www." + site + ".com")
 	fmt.Printf("%s response -> %d \n", site, res.StatusCode)
 }
 // END OMIT

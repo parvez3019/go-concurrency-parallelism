@@ -88,8 +88,21 @@ Channels can be thought as pipes through which goroutines communicate.
 
 .background titles/scheduler.png
 
-* The Go Scheduler
-- Basic stuff about the Go Scheduler.
+* Basic concepts
+- G -- Goroutine
+- M -- OS thread
+- P -- Processor(abstracted concept)
+- GOMAXPROCS
+
+* Responsibility
+- M must have an associated P to execute Go code, however it can be blocked or in a syscall w/o an associated P
+- G's are in P's local queue or global queue
+- G keeps current task status, provides stack
+
+*
+
+.background titles/gpm.png
+
 
 *
 
