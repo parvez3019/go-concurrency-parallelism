@@ -95,7 +95,7 @@ Channels can be thought as pipes through which goroutines communicate.
 
 .background titles/understanding.png
 
-* What is  Concurrency? :
+* Recap of Concurrency
 - Dealing with a lot of things at the same time.
 - It is more about the structure of your program.
 - Has nothing to do with number of cores in a system.
@@ -110,7 +110,7 @@ Images can be added to slides by adding the markup `.image`.
 
 .image giphy.gif
 
-* What is  Parallelism?
+* Recap of Parallelism
 - Doing a lot of things at the same time.
 - Can only be achieved in multi core systems (unless hyper-threading is enabled).
 - E.g - Coding and listening to music at the same time.
@@ -120,14 +120,11 @@ Images can be added to slides by adding the markup `.image`.
 .play fib.go /START OMIT/,/END OMIT/
 
 * Concurrency with parallelism
-Content.
-
-* Example (Concurrency with parallelism)
-
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+- It is possible to run your concurrent code in parallel
+- An example would be running multiple pingpong matches at the same time
 
 * So when should we use what?
-- It depends.
+- There is no silver bullet, it depends on the problem you're solving
 - For CPU heavy tasks use parallelism.
 - For network/IO heavy tasks use concurrency.
 - There is no silver bullet.
@@ -139,10 +136,10 @@ Content.
 
 * Gotchas of Concurrent/Parallel programs
 - Spawning many goroutines will *not* always give you better performance
+- Goroutine leaks
+- Increasing GOMAXPROCS value does *not* mean your code will run faster
 - Shared memory for local variables can lead to undesired state
 - Cooperative scheduling can starve goroutines
-- Increasing GOMAXPROCS value does *not* mean your code will run faster
-- Goroutine leaks
 
 *
 
