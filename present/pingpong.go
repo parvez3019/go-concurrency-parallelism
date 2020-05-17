@@ -2,13 +2,11 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 	"time"
 )
 
 // START OMIT
 func main() {
-	runtime.GOMAXPROCS(1)
 
 	var Ball int
 	table := make(chan int)
