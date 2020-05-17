@@ -93,7 +93,7 @@ Channels can be thought as pipes through which goroutines communicate.
 - M -- OS thread
 - P -- Processor(abstracted concept)
 - GOMAXPROCS
-- Cooperative scheduling
+- M:N Cooperative scheduling
 
 * Responsibility
 - M must have an associated P to execute Go code, however it can be blocked or in a syscall w/o an associated P
