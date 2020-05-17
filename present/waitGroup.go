@@ -9,10 +9,10 @@ import (
 // START OMIT
 func main() {
 	sites := []string {
-		"google.com",
-		"facebook.com",
-		"thoughtworks.com",
-		"github.com",
+		"www.google.com",
+		"www.facebook.com",
+		"www.thoughtworks.com",
+		"www.github.com",
 	}
 
 	var wg sync.WaitGroup

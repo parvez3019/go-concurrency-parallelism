@@ -11,7 +11,7 @@ func main() {
 		"www.google.com",
 		"www.facebook.com",
 		"www.thoughtworks.com",
-		"github.com",
+		"www.github.com",
 	}
 
 	start := time.Now()

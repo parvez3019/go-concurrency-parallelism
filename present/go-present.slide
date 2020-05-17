@@ -43,7 +43,7 @@ Let's try to hit these websites and print the response in console.
 
 .background titles/goroutines.png
 
-* 
+*
 A goroutine is a lightweight thread managed by the Go runtime.
 
 .play goroutines.go /START OMIT/,/END OMIT/
@@ -61,8 +61,8 @@ A goroutine is a lightweight thread managed by the Go runtime.
 
 .background titles/mutex.png
 
-* Mutexes
-A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running the critical section of code at any point of time to prevent race condition from happening.
+*
+A Mutex ensures ownership of a resource to one goroutine at a time
 
 .play mutex.go /START OMIT/,/END OMIT/
 .image race.png 200 800
@@ -71,8 +71,8 @@ A Mutex is used to provide a locking mechanism to ensure that only one Goroutine
 
 .background titles/channels.png
 
-* Channels
-Channels Channels are the pipes that connect concurrent goroutines.
+*
+Channels can be thought as pipes through which goroutines communicate.
 
 .code channels.go /START OMIT/,/END OMIT/
 

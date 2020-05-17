@@ -8,11 +8,16 @@ import (
 
 
 func main() {
-	sites := []string{"www.google.com", "www.facebook.com", "www.thoughtworks.com"}
+	sites := []string{
+		"google.com",
+		"facebook.com",
+		"thoughtworks.com",
+		"github.com",
+	}
 
 	var wg sync.WaitGroup
 	// START OMIT
-	result := make(chan string, 3)
+	result := make(chan string, 4)
 	for _, site := range sites {
 		wg.Add(1)
 		go printResponse(site, &wg, result)
@@ -24,8 +29,6 @@ func main() {
 		fmt.Println(r)
 	}
 	// END OMIT
-
-	fmt.Println("main exit")
 }
 
 func printResponse(site string, wg *sync.WaitGroup, result chan string) {
