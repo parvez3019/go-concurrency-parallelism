@@ -25,7 +25,6 @@ func main() {
 	result := []string{}
 
 	start := time.Now()
-
 	for _, site := range sites {
 		wg.Add(1)
 		go printResponse(site, &wg, &result)

@@ -19,7 +19,7 @@
 
 
 * Some basic stuff in Go
-Let's print your horoscope for today
+Feelings
 
 .play example.go
 
@@ -103,6 +103,12 @@ Channels can be thought as pipes through which goroutines communicate.
 * Example (Concurrency)
 
 .play pingpong.go /START OMIT/,/END OMIT/
+
+* Show git
+
+Images can be added to slides by adding the markup `.image`.
+
+.image giphy.gif
 
 * What is  Parallelism?
 - Doing a lot of things at the same time.
