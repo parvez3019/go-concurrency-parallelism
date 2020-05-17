@@ -117,11 +117,9 @@ Channels can be thought as pipes through which goroutines communicate.
 
 .play pingpong.go /START OMIT/,/END OMIT/
 
-* Show git
+* Visualising ping pong match
 
-Images can be added to slides by adding the markup `.image`.
-
-.image giphy.gif
+.image titles/conc_latest.gif
 
 * Recap of Parallelism
 - Doing a lot of things at the same time.
@@ -131,6 +129,10 @@ Images can be added to slides by adding the markup `.image`.
 * Example (Parallelism)
 
 .play fib.go /START OMIT/,/END OMIT/
+
+* Visualising fibonnaci calculation
+
+.image titles/par_lat.gif
 
 * Concurrency with parallelism
 - It is possible to run your concurrent code in parallel
