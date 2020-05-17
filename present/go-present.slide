@@ -48,10 +48,6 @@ A goroutine is a lightweight thread managed by the Go runtime.
 
 .play goroutines.go /START OMIT/,/END OMIT/
 
-* Go Routines
-Adding sleep to main
-
-.play goroutines-sleep.go /START OMIT/,/END OMIT/
 
 *
 

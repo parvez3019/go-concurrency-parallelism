@@ -3,14 +3,24 @@ package main
 import (
 	"fmt"
 	"net/http"
+	"time"
 )
 // START OMIT
 func main() {
-	sites := []string {"www.google.com", "www.facebook.com", "www.thoughtworks.com"}
+	sites := []string {
+		"www.google.com",
+		"www.facebook.com",
+		"www.thoughtworks.com",
+		"github.com",
+	}
+
+	start := time.Now()
+
 	for _, site := range sites {
 		go printResponse(site)
 	}
-	fmt.Println("exit main")
+
+	fmt.Println("Total time taken for the responses: ", time.Since(start))
 }
 
 func printResponse(site string) {	

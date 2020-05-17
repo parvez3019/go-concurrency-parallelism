@@ -20,7 +20,7 @@ func main() {
 		printResponse(site)
 	}
 
-	fmt.Println("Total time taken for the reponses: ", time.Since(start))
+	fmt.Println("Total time taken for the responses: ", time.Since(start))
 }
 
 func printResponse(site string) {
