@@ -3,5 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("You day is gonna be same as today! #2020Sucks")
+	fmt.Println("Today is going to be same as yesterday! #2020Sucks")
 }

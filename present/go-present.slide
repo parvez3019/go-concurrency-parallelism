@@ -19,7 +19,7 @@
 
 
 * Some basic stuff in Go
-Let's print your tomorrow's Horoscope.
+Let's print your horoscope for today
 
 .play example.go
 
