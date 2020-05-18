@@ -24,7 +24,7 @@ func main() {
 func player(table chan int, playerName string) {
 	for {
 		ball := <-table
-		fmt.Printf("%s taking ball from %d table\n", playerName, ball)
+		fmt.Printf("%s taking ball %d from table\n", playerName, ball)
 		ball++
 		time.Sleep(1 * time.Second)
 		fmt.Printf("%s putting ball %d on table\n", playerName, ball)
