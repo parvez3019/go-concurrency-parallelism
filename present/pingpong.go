@@ -2,32 +2,28 @@ package main
 
 import (
 	"fmt"
-	"runtime"
 	"time"
 )
 
 // START OMIT
+type Ball struct{ hits int }
+
 func main() {
-	runtime.GOMAXPROCS(1)
+	table := make(chan *Ball)
+	go player("ping", table)
+	go player("pong", table)
 
-	var Ball int
-	table := make(chan int)
-
-	go player(table, "Player 1")
-	go player(table, "Player 2")
-
-	table <- Ball
-	time.Sleep(10 * time.Second)
-	<-table
+	table <- new(Ball) // game on; toss the ball
+	time.Sleep(5 * time.Second)
+	<-table // game over; grab the ball
 }
 
-func player(table chan int, playerName string) {
+func player(name string, table chan *Ball) {
 	for {
 		ball := <-table
-		fmt.Printf("%s taking ball %d from table\n", playerName, ball)
-		ball++
-		time.Sleep(1 * time.Second)
-		fmt.Printf("%s putting ball %d on table\n", playerName, ball)
+		ball.hits++
+		fmt.Println(name, ball.hits)
+		time.Sleep(500 * time.Millisecond)
 		table <- ball
 	}
 }
