@@ -72,7 +72,7 @@ Let's wait for go routines to finish.
 *
 To wait for multiple goroutines to finish, we can use a wait group.
 
-.play WaitGroup.go /START OMIT/,/END OMIT/
+.play waitGroup.go /START OMIT/,/END OMIT/
 
 *
 
