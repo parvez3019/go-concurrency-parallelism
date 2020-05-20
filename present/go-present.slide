@@ -106,41 +106,6 @@ Adding channel to get the responses instead of an array.
 
 *
 
-.background titles/scheduler.png
-
-* Responsibility
-
-- Schedules goroutines on OS threads
-- Uses cooperative scheduling instead of preemptive scheduling
-- Context switching
-- Written in Go
-
-*
-
-.image titles/exe.png
-
-
-* Basic concepts
-
-- G -- Goroutine
-- M -- OS thread
-- P -- Processor(abstracted concept)
-- Local Run Queue (LRQ)
-- Global Run Queue (GRQ)
-
-
-*
-
-.background titles/gpm.png
-
-
-* Questions until now?
-
-.image questionsgopher.jpeg 400 600
-
-
-*
-
 .background titles/understanding.png
 
 * Recap of Concurrency
@@ -182,6 +147,7 @@ Adding channel to get the responses instead of an array.
 
 .image questionsgopher.jpeg 400 600
 
+
 *
 
 .background titles/gotachas.png
@@ -192,6 +158,53 @@ Adding channel to get the responses instead of an array.
 - Increasing GOMAXPROCS value does *not* mean your code will run faster
 - Shared memory for local variables can lead to undesired state
 - Cooperative scheduling can starve goroutines
+
+*
+
+.background titles/scheduler.png
+
+* Responsibility
+
+- Schedules M number of goroutines on N number of OS threads (M:N scheduling)
+- Uses cooperative scheduling instead of preemptive scheduling
+- Context switching
+- Written in Go
+
+
+* M:N scheduling
+
+.image titles/m-n1.jpg
+
+
+
+* Basic concepts
+
+- G -- Goroutine
+- M -- OS thread
+- P -- Processor(abstracted concept)
+- Local Run Queue (LRQ)
+- Global Run Queue (GRQ)
+
+
+*
+
+.background titles/gpm.png
+
+
+* Where does the Go Scheduler fit in?
+
+.image titles/exe.png
+
+
+
+* Why do we need a scheduler?
+-
+
+
+* Questions until now?
+
+.image questionsgopher.jpeg 400 600
+
 
 *
 
