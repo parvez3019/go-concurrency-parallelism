@@ -12,18 +12,18 @@ func main() {
 	var wg sync.WaitGroup
 	start := time.Now()
 
-	a := []int{38, 39, 40, 41}
-	for _, site := range a {
+	a := [4]int{38, 39, 40, 41}
+	for _, num := range a {
 		wg.Add(1)
-		go fib(&wg, site)
+		go fib(&wg, num)
 	}
 	wg.Wait()
 	fmt.Printf("time elapsed %v \n", time.Since(start))
 	// END OMIT
 }
 
-func fib(s *sync.WaitGroup, site int) {
-	fmt.Println(getfib(site))
+func fib(s *sync.WaitGroup, num int) {
+	fmt.Println(getfib(num))
 	s.Done()
 }
 

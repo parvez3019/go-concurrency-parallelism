@@ -8,7 +8,7 @@ import (
 )
 // START OMIT
 func main() {
-	sites := []string {"google", "facebook", "thoughtworks", "github"}
+	sites := [4]string {"google", "facebook", "thoughtworks", "github"}
 
 	var wg sync.WaitGroup
 

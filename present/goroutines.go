@@ -7,7 +7,7 @@ import (
 )
 // START OMIT
 func main() {
-	sites := []string {"google", "facebook", "thoughtworks", "github"}
+	sites := [4]string {"google", "facebook", "thoughtworks", "github"}
 
 	start := time.Now()
 	for _, site := range sites {

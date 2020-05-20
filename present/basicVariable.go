@@ -9,15 +9,9 @@ func main() {
 	fmt.Printf("On a scale of 0-10, how sad are you today? \nME - %d\n", sadnessLevel)
 
 	// Arrays
-	randomArray := [5]int{10, 20, 30, 40, 50}   // Intialized with values
-	randomArray[1] = 21 
-	fmt.Println("Priting Array : ", randomArray)
-
-	// Slices
-	slice := []string{}
-	fmt.Println("Printing Slice : ", slice)
-	slice = append(slice, "FEELINGS")
-	fmt.Printf("This slice have %+v in it",slice)
+	randomArray := [4]string{"This", "year", "is", "amazing"}   // Intialized with values
+	randomArray[3] = "awful" 
+	fmt.Println("Priting Array :", randomArray)
 
 	// END OMIT
 
