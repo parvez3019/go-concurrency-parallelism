@@ -109,6 +109,7 @@ Adding channel to get the responses instead of an array.
 .background titles/scheduler.png
 
 * Responsibility
+
 - Schedules goroutines on OS threads
 - Uses cooperative scheduling instead of preemptive scheduling
 - Context switching
@@ -120,6 +121,7 @@ Adding channel to get the responses instead of an array.
 
 
 * Basic concepts
+
 - G -- Goroutine
 - M -- OS thread
 - P -- Processor(abstracted concept)
@@ -130,6 +132,11 @@ Adding channel to get the responses instead of an array.
 *
 
 .background titles/gpm.png
+
+
+* Questions until now?
+
+.image questionsgopher.jpeg 400 600
 
 
 *
@@ -171,6 +178,9 @@ Adding channel to get the responses instead of an array.
 - For CPU heavy tasks use parallelism
 - For network/IO heavy tasks use concurrency
 
+* Questions until now?
+
+.image questionsgopher.jpeg 400 600
 
 *
 
