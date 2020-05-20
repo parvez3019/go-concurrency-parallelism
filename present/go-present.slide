@@ -165,15 +165,20 @@ Adding channel to get the responses instead of an array.
 
 * Responsibility
 
-- Schedules M number of goroutines on N number of OS threads (M:N scheduling)
+- Schedules N number of goroutines on M number of OS threads (M:N scheduling)
 - Uses cooperative scheduling instead of preemptive scheduling
 - Context switching
 - Written in Go
 
 
-* M:N scheduling
+*
 
-.image titles/m-n1.jpg
+.image titles/m-n.png 500 800
+
+
+*
+
+.image titles/m-n1.png 500 800
 
 
 
