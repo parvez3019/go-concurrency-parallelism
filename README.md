@@ -1,3 +1,6 @@
+[Click here to see the presentation](https://talks.godoc.org/github.com/parvez3019/go-concurrency/present/go-present.slide#1)
+
+
 # go-concurrency
 
 go-present
