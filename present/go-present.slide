@@ -108,19 +108,24 @@ Adding channel to get the responses instead of an array.
 
 .background titles/scheduler.png
 
+* Responsibility
+- Schedules goroutines on OS threads
+- Uses cooperative scheduling instead of preemptive scheduling
+- Context switching
+- Written in Go
+
+*
+
+.image titles/exe.png
+
+
 * Basic concepts
 - G -- Goroutine
 - M -- OS thread
 - P -- Processor(abstracted concept)
-- GOMAXPROCS
-- M:N Cooperative scheduling
-- LRQ
-- GRQ
+- Local Run Queue (LRQ)
+- Global Run Queue (GRQ)
 
-* Responsibility
-- M must have an associated P to execute Go code, however it can be blocked or in a syscall w/o an associated P
-- G's are in P's local queue or global queue
-- G keeps current task status, provides stack
 
 *
 
