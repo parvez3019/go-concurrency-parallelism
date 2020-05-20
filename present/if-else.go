@@ -8,7 +8,7 @@ func main() {
 
 	for _, site := range sites {
 		if site == "google" {
-			fmt.Printf("Ok %s \n", site)
+			fmt.Printf("ok %s \n", site)
 		} else if site == "facebook" {
 			fmt.Println(site)
 		} else {

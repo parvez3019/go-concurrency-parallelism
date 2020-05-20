@@ -19,7 +19,7 @@
 
 
 * Some basic stuff in Go
-Feelings
+Let's try to print our collective feelings in one sentence.
 
 .play example.go
 
@@ -46,7 +46,18 @@ Let's try to hit these websites and print the response in console.
 *
 A goroutine is a lightweight thread managed by the Go runtime.
 
+.image gofunc.jpeg 300 800
+
+*
+Let's run printResponse function go routine
+
 .play goroutines.go /START OMIT/,/END OMIT/
+
+* The main function is a go routine
+Even more important to know is that once the main function returns, it closes all other go routines that are currently running.
+
+.image maingopher.jpeg 300 800
+
 
 *
 Let's wait for go routines to finish.
@@ -80,9 +91,18 @@ A Mutex ensures ownership of a resource to one goroutine at a time
 *
 Channels can be thought as pipes through which goroutines communicate.
 
+.image channelsgopher.jpeg 400 700
+
+*
+Adding channel to get the responses instead of an array.
+
 .code channels.go /START OMIT/,/END OMIT/
 
 .play channels2.go /START OMIT/,/END OMIT/
+
+* Any questions until now?
+
+.image questionsgopher.jpeg 400 600
 
 *
 
