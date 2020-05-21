@@ -11,7 +11,7 @@ func main() {
 	// Arrays
 	randomArray := [4]string{"This", "year", "is", "amazing"}   // Intialized with values
 	randomArray[3] = "awful" 
-	fmt.Println("Priting Array :", randomArray)
+	fmt.Println(randomArray)
 
 	// END OMIT
 

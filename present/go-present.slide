@@ -43,13 +43,16 @@ Let's try to hit these websites and print the response in console.
 
 .background titles/goroutines.png
 
-*
-A goroutine is a lightweight thread managed by the Go runtime.
+* A goroutine is a lightweight thread managed by the Go runtime.
+- Memory consumption (very cheap around few kilobytes at inception)
+- Dynamically Sized Stacks
+- Low Latency (Run multiple Goroutines on a single OS thread)
+- Setup and teardown costs
+- Managed by go runtime
 
 .image gofunc.jpeg 300 800
 
-*
-Let's run printResponse function go routine
+* Let's run printResponse function as goroutines
 
 .play goroutines.go /START OMIT/,/END OMIT/
 
@@ -59,8 +62,12 @@ Even more important to know is that once the main function returns, it closes al
 .image maingopher.jpeg 300 800
 
 
-*
-Let's wait for go routines to finish.
+* Main & goroutines
+
+.image main.gif 400 800
+
+
+* Let's wait for go routines to finish.
 
 .play goroutines-sleep.go /START OMIT/,/END OMIT/
 
@@ -69,8 +76,7 @@ Let's wait for go routines to finish.
 
 .background titles/wait.png
 
-*
-To wait for multiple goroutines to finish, we can use a wait group.
+* To wait for multiple goroutines to finish, we can use a wait group.
 
 .play waitGroup.go /START OMIT/,/END OMIT/
 
@@ -88,10 +94,14 @@ A Mutex ensures ownership of a resource to one goroutine at a time
 
 .background titles/channels.png
 
-*
-Channels can be thought as pipes through which goroutines communicate.
+* Channels can be thought as pipes through which goroutines communicate.
+- Can send and receive values with the channel operator <-
+- Blocking in nature
+- Helps to synchronizing goroutines(signal mechanism)
+- Buffered & Unbuffered channels
+- Can be used in Parallelization
 
-.image channelsgopher.jpeg 400 700
+.image channelsgopher.jpeg 300 500
 
 *
 Adding channel to get the responses instead of an array.
