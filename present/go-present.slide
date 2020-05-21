@@ -116,41 +116,6 @@ Adding channel to get the responses instead of an array.
 
 *
 
-.background titles/scheduler.png
-
-* Responsibility
-
-- Schedules goroutines on OS threads
-- Uses cooperative scheduling instead of preemptive scheduling
-- Context switching
-- Written in Go
-
-*
-
-.image titles/exe.png
-
-
-* Basic concepts
-
-- G -- Goroutine
-- M -- OS thread
-- P -- Processor(abstracted concept)
-- Local Run Queue (LRQ)
-- Global Run Queue (GRQ)
-
-
-*
-
-.background titles/gpm.png
-
-
-* Questions until now?
-
-.image questionsgopher.jpeg 400 600
-
-
-*
-
 .background titles/understanding.png
 
 * Recap of Concurrency
@@ -192,6 +157,7 @@ Adding channel to get the responses instead of an array.
 
 .image questionsgopher.jpeg 400 600
 
+
 *
 
 .background titles/gotachas.png
@@ -202,6 +168,80 @@ Adding channel to get the responses instead of an array.
 - Increasing GOMAXPROCS value does *not* mean your code will run faster
 - Shared memory for local variables can lead to undesired state
 - Cooperative scheduling can starve goroutines
+
+*
+
+.background titles/scheduler.png
+
+* Responsibility
+
+- Schedules N number of goroutines on M number of OS threads (M:N scheduling)
+- Uses cooperative scheduling instead of preemptive scheduling (until Go 1.13)
+- Context switching
+- Written in Go
+
+
+*
+
+.image titles/m-n.png 500 800
+
+
+*
+
+.image titles/m-n1.png 500 800
+
+
+
+* How do OS threads know where to pick up goroutines from?
+
+.image titles/gopher-thinking.png 300 500
+
+
+
+* How do OS threads know where to pick up goroutines from?
+
+- Local Run Queue (LRQ)
+- Global Run Queue (GRQ)
+
+
+* Where does these Local Run Queues exist?
+
+.image titles/gopher-thinking.png 300 500
+
+
+* The Processor(P) object
+
+- Created when program starts
+- Resource required by OS threads to run Go code
+- Stores goroutines that are runnable (LRQ)
+
+.image titles/p.png 350 300
+
+
+* M:P:N threading
+
+.image titles/mpn.png 550 1000
+
+* M:P:N threading
+
+.image titles/mpn1.png 550 1000
+
+
+* Where does the Go Scheduler fit in?
+
+.image titles/exe.png
+
+
+* What does this scheduler bring to the table?
+- Better visibility of goroutine scheduling
+- Reuse of OS threads
+- Minimal context switching at OS level
+
+
+* Questions until now?
+
+.image questionsgopher.jpeg 400 600
+
 
 *
 
