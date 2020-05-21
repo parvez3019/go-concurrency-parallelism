@@ -160,17 +160,6 @@ Adding channel to get the responses instead of an array.
 
 *
 
-.background titles/gotachas.png
-
-* Gotchas of Concurrent/Parallel programs
-- Spawning many goroutines will *not* always give you better performance
-- Goroutine leaks
-- Increasing GOMAXPROCS value does *not* mean your code will run faster
-- Shared memory for local variables can lead to undesired state
-- Cooperative scheduling can starve goroutines
-
-*
-
 .background titles/scheduler.png
 
 * Responsibility
@@ -241,6 +230,18 @@ Adding channel to get the responses instead of an array.
 * Questions until now?
 
 .image questionsgopher.jpeg 400 600
+
+
+*
+
+.background titles/gotachas.png
+
+* Gotchas of Concurrent/Parallel programs
+- Spawning many goroutines will *not* always give you better performance
+- Goroutine leaks
+- Increasing GOMAXPROCS value does *not* mean your code will run faster
+- Shared memory for local variables can lead to undesired state
+- Cooperative scheduling can starve goroutines
 
 
 *
