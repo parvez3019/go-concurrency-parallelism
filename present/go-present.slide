@@ -166,7 +166,7 @@ Adding channel to get the responses instead of an array.
 * Responsibility
 
 - Schedules N number of goroutines on M number of OS threads (M:N scheduling)
-- Uses cooperative scheduling instead of preemptive scheduling
+- Uses cooperative scheduling instead of preemptive scheduling (until Go 1.13)
 - Context switching
 - Written in Go
 
@@ -182,18 +182,39 @@ Adding channel to get the responses instead of an array.
 
 
 
-* Basic concepts
+* How do OS threads know where to pick up goroutines from?
 
-- G -- Goroutine
-- M -- OS thread
-- P -- Processor(abstracted concept)
+.image titles/gopher-thinking.png 300 500
+
+
+
+* How do OS threads know where to pick up goroutines from?
+
 - Local Run Queue (LRQ)
 - Global Run Queue (GRQ)
 
 
-*
+* Where does these Local Run Queues exist?
 
-.background titles/gpm.png
+.image titles/gopher-thinking.png 300 500
+
+
+* The Processor(P) object
+
+- Created when program starts
+- Resource required by OS threads to run Go code
+- Stores goroutines that are runnable (LRQ)
+
+.image titles/p.png 350 300
+
+
+* M:P:N threading
+
+.image titles/mpn.png 550 1000
+
+* M:P:N threading
+
+.image titles/mpn1.png 550 1000
 
 
 * Where does the Go Scheduler fit in?
@@ -201,9 +222,10 @@ Adding channel to get the responses instead of an array.
 .image titles/exe.png
 
 
-
-* Why do we need a scheduler?
--
+* What does this scheduler bring to the table?
+- Better visibility of goroutine scheduling
+- Reuse of OS threads
+- Minimal context switching at OS level
 
 
 * Questions until now?
