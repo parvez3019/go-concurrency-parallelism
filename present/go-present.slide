@@ -1,9 +1,4 @@
-*
-
-
-* .
-
-.background titles/title.png
+* Concurrency & Parallelism in Go
 
 * Agenda :
 - Brief introduction to Go
@@ -13,9 +8,7 @@
 - Gotchas of writing concurrent/parallel programs
 - Success stories
 
-* .
-
-.background titles/briefintro.png
+* A Brief Introduction to Golang
 
 
 * Some basic stuff in Go
@@ -39,9 +32,7 @@ Let's try to hit these websites and print the response in console.
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
 
-* .
-
-.background titles/goroutines.png
+* GoRoutines
 
 * A goroutine is a lightweight thread managed by the Go runtime.
 - Memory consumption (very cheap around few kilobytes at inception)
@@ -72,17 +63,13 @@ Even more important to know is that once the main function returns, it closes al
 .play goroutines-sleep.go /START OMIT/,/END OMIT/
 
 
-* .
-
-.background titles/wait.png
+* Wait-Groups
 
 * To wait for multiple goroutines to finish, we can use a wait group.
 
 .play waitGroup.go /START OMIT/,/END OMIT/
 
-* .
-
-.background titles/mutex.png
+* Mutexes
 
 * Mutex
 A Mutex ensures ownership of a resource to one goroutine at a time
@@ -90,9 +77,7 @@ A Mutex ensures ownership of a resource to one goroutine at a time
 .play mutex.go /START OMIT/,/END OMIT/
 .image race.png 200 800
 
-* .
-
-.background titles/channels.png
+* Channels
 
 * Channels can be thought as pipes through which goroutines communicate.
 - Can send and receive values with the channel operator <-
@@ -114,9 +99,7 @@ Adding channel to get the responses instead of an array.
 
 .image questionsgopher.jpeg 400 600
 
-* .
-
-.background titles/understanding.png
+* Understanding Concurrency & Parallelism
 
 * Recap of Concurrency
 - Dealing with a lot of things at the same time
@@ -158,9 +141,7 @@ Adding channel to get the responses instead of an array.
 .image questionsgopher.jpeg 400 600
 
 
-* .
-
-.background titles/scheduler.png
+* The Go Scheduler
 
 * Responsibility
 
@@ -170,12 +151,12 @@ Adding channel to get the responses instead of an array.
 - Written in Go
 
 
-* .
+* M:P Threading
 
 .image titles/m-n.png 500 800
 
 
-* .
+* Go Routines States
 
 .image titles/m-n1.png 500 800
 
@@ -232,9 +213,7 @@ Adding channel to get the responses instead of an array.
 .image questionsgopher.jpeg 400 600
 
 
-* .
-
-.background titles/gotachas.png
+* Gotchas 
 
 * Gotchas of Concurrent/Parallel programs
 - Spawning many goroutines will *not* always give you better performance
@@ -244,27 +223,21 @@ Adding channel to get the responses instead of an array.
 - Cooperative scheduling can starve goroutines
 
 
-* .
+* Sucess Stories
 
-.background titles/success.png
+* Uber
 
-* .
+.image success/uber.png 500 800
 
-.image success/uber.png 600 800
+* Twitch
 
-* .
+.image success/twitch.png 500 1000
 
-.image success/twitch.png 600 1000
+* Others
 
-* .
+.image success/twitter.png 500 900
 
-.image success/twitter.png 600 1000
-
-* .
+* That's all from our side.
 
 .image micdrop.png 600 600
 
-
-* .
-
-.background titles/thankyou.png
