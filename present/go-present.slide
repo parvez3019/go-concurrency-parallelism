@@ -1,7 +1,7 @@
 *
 
 
-*
+* .
 
 .background titles/title.png
 
@@ -13,7 +13,7 @@
 - Gotchas of writing concurrent/parallel programs
 - Success stories
 
-*
+* .
 
 .background titles/briefintro.png
 
@@ -39,7 +39,7 @@ Let's try to hit these websites and print the response in console.
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
 
-*
+* .
 
 .background titles/goroutines.png
 
@@ -72,7 +72,7 @@ Even more important to know is that once the main function returns, it closes al
 .play goroutines-sleep.go /START OMIT/,/END OMIT/
 
 
-*
+* .
 
 .background titles/wait.png
 
@@ -80,17 +80,17 @@ Even more important to know is that once the main function returns, it closes al
 
 .play waitGroup.go /START OMIT/,/END OMIT/
 
-*
+* .
 
 .background titles/mutex.png
 
-*
+* Mutex
 A Mutex ensures ownership of a resource to one goroutine at a time
 
 .play mutex.go /START OMIT/,/END OMIT/
 .image race.png 200 800
 
-*
+* .
 
 .background titles/channels.png
 
@@ -103,7 +103,7 @@ A Mutex ensures ownership of a resource to one goroutine at a time
 
 .image channelsgopher.jpeg 300 500
 
-*
+* Channels
 Adding channel to get the responses instead of an array.
 
 .code channels.go /START OMIT/,/END OMIT/
@@ -114,7 +114,7 @@ Adding channel to get the responses instead of an array.
 
 .image questionsgopher.jpeg 400 600
 
-*
+* .
 
 .background titles/understanding.png
 
@@ -158,7 +158,7 @@ Adding channel to get the responses instead of an array.
 .image questionsgopher.jpeg 400 600
 
 
-*
+* .
 
 .background titles/scheduler.png
 
@@ -170,12 +170,12 @@ Adding channel to get the responses instead of an array.
 - Written in Go
 
 
-*
+* .
 
 .image titles/m-n.png 500 800
 
 
-*
+* .
 
 .image titles/m-n1.png 500 800
 
@@ -232,7 +232,7 @@ Adding channel to get the responses instead of an array.
 .image questionsgopher.jpeg 400 600
 
 
-*
+* .
 
 .background titles/gotachas.png
 
@@ -244,27 +244,27 @@ Adding channel to get the responses instead of an array.
 - Cooperative scheduling can starve goroutines
 
 
-*
+* .
 
 .background titles/success.png
 
-*
+* .
 
 .image success/uber.png 600 800
 
-*
+* .
 
 .image success/twitch.png 600 1000
 
-*
+* .
 
 .image success/twitter.png 600 1000
 
-*
+* .
 
 .image micdrop.png 600 600
 
 
-*
+* .
 
 .background titles/thankyou.png
