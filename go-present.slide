@@ -1,4 +1,4 @@
-* Concurrency & Parallelism in Go
+Concurrency & Parallelism in Go
 
 * Agenda :
 - Brief introduction to Go
@@ -213,7 +213,7 @@ Adding channel to get the responses instead of an array.
 .image questionsgopher.jpeg 400 600
 
 
-* Gotchas 
+* Gotchas
 
 * Gotchas of Concurrent/Parallel programs
 - Spawning many goroutines will *not* always give you better performance
