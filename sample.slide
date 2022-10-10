@@ -1,0 +1,31 @@
+Title of Presentation
+23 July 2019
+
+Drashti Ved
+drashti.ved@gmail.com
+
+* Format your Slides
+Let's try *bold*.
+
+How do you like _italic_?
+
+`Program` `Font`
+
+_A_lot_of_italic_text_
+
+
+* Images
+.image Golang-Logo.jpg
+
+* Display and highlight code
+.code hello.go
+Display Partial code
+.code hello.go /^//START/,/^//END/ HL12
+
+* Run your Go code
+.play hello.go HL23
+
+* Bullet Points
+- First bullet point
+- One more
+- Last one!
