@@ -3,30 +3,21 @@ Concurrency & Parallelism in Go
 * Agenda :
 - Brief introduction to Go
 - Understand goroutines, waitgroups, mutexes & channels.
-- High level overview of the Golang scheduler
 - Understanding concurrency and parallelism with the help of programs and visualisation
+- High level overview of the Golang scheduler
 - Gotchas of writing concurrent/parallel programs
 - Success stories
 
 * A Brief Introduction to Golang
 
 
-* Some basic stuff in Go
-Let's try to print our collective feelings in one sentence.
+* Golang
+Go, also known as Golang, is an open-source, compiled, and statically typed programming language designed by Google. It is built to be simple, high-performing, readable, and efficient.
 
 .play example.go
 
-* Some basic stuff in Go
-Varible intialization
 
-.play basicVariable.go /START OMIT/,/END OMIT/
-
-* Some basic stuff in Go
-If-Else & For loop
-
-.play if-else.go /START OMIT/,/END OMIT/
-
-* Now let's start
+* Basic Go Code Example
 Let's try to hit these websites and print the response in console.
 
 .play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
@@ -181,20 +172,17 @@ Adding channel to get the responses instead of an array.
 
 * The Processor(P) object
 
+- P : represents the processor, which can be seen as a local scheduler running on a thread
 - Created when program starts
 - Resource required by OS threads to run Go code
 - Stores goroutines that are runnable (LRQ)
 
-.image titles/p.png 350 300
+.image titles/p.png 250 200
 
 
 * M:P:N threading
 
-.image titles/mpn.png 550 1000
-
-* M:P:N threading
-
-.image titles/mpn1.png 550 1000
+.image titles/MNP.png 550 1000
 
 
 * Where does the Go Scheduler fit in?
