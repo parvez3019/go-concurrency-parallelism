@@ -1,3 +1,6 @@
+
+[Click here to watch the talk on Go currency & parallelism](https://www.youtube.com/watch?v=1aaNZNdwd2Y)
+
 [Click here to see the presentation](https://talks.godoc.org/github.com/parvez3019/go-concurrency-parallelism/go-present.slide#1)
 
 
