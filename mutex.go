@@ -18,7 +18,7 @@ func printResponse(site string, wg *sync.WaitGroup, result *[]string) {
 }
 // END OMIT
 func main() {
-	sites := []string {"www.google.com", "www.facebook.com", "www.thoughtworks.com", "www.github.com"}
+	sites := []string {"www.google.com", "www.facebook.com", "www.youtube.com", "www.github.com"}
 
 	var wg sync.WaitGroup
 

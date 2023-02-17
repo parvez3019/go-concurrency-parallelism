@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	// START OMIT
-	sites := [3]string{"google", "facebook", "thoughtworks"}
+	sites := [3]string{"google", "facebook", "youtube"}
 
 	for _, site := range sites {
 		if site == "google" {

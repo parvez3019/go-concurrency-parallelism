@@ -11,7 +11,7 @@ func main() {
 	sites := []string{
 		"google.com",
 		"facebook.com",
-		"thoughtworks.com",
+		"youtube.com",
 		"github.com",
 	}
 
