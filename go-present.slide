@@ -14,13 +14,13 @@ Concurrency & Parallelism in Go
 * Golang
 Go, also known as Golang, is an open-source, compiled, and statically typed programming language designed by Google. It is built to be simple, high-performing, readable, and efficient.
 
-.play example.go
+.play codeSamples/example.go
 
 
 * Basic Go Code Example
 Let's try to hit these websites and print the response in console.
 
-.play websiteWithoutRoutines.go /START OMIT/,/END OMIT/
+.play codeSamples/websiteWithoutRoutines.go /START OMIT/,/END OMIT/
 
 
 * GoRoutines
@@ -32,41 +32,41 @@ Let's try to hit these websites and print the response in console.
 - Setup and teardown costs
 - Managed by go runtime
 
-.image gofunc.jpeg 300 800
+.image images/gofunc.jpeg 300 800
 
 * Let's run printResponse function as goroutines
 
-.play goroutines.go /START OMIT/,/END OMIT/
+.play codeSamples/goroutines.go /START OMIT/,/END OMIT/
 
 * The main function is a go routine
 Even more important to know is that once the main function returns, it closes all other go routines that are currently running.
 
-.image maingopher.jpeg 300 800
+.image images/maingopher.jpeg 300 800
 
 
 * Main & goroutines
 
-.image main.gif 400 800
+.image images/main.gif 400 800
 
 
 * Let's wait for go routines to finish.
 
-.play goroutines-sleep.go /START OMIT/,/END OMIT/
+.play codeSamples/goroutines-sleep.go /START OMIT/,/END OMIT/
 
 
 * Wait-Groups
 
 * To wait for multiple goroutines to finish, we can use a wait group.
 
-.play waitGroup.go /START OMIT/,/END OMIT/
+.play codeSamples/waitGroup.go /START OMIT/,/END OMIT/
 
 * Mutexes
 
 * Mutex
 A Mutex ensures ownership of a resource to one goroutine at a time
 
-.play mutex.go /START OMIT/,/END OMIT/
-.image race.png 200 800
+.play codeSamples/mutex.go /START OMIT/,/END OMIT/
+.image images/race.png 200 800
 
 * Channels
 
@@ -77,18 +77,18 @@ A Mutex ensures ownership of a resource to one goroutine at a time
 - Buffered & Unbuffered channels
 - Can be used in Parallelization
 
-.image channelsgopher.jpeg 300 500
+.image images/channelsgopher.jpeg 300 500
 
 * Channels
 Adding channel to get the responses instead of an array.
 
-.code channels.go /START OMIT/,/END OMIT/
+.code codeSamples/channels.go /START OMIT/,/END OMIT/
 
-.play channels2.go /START OMIT/,/END OMIT/
+.play codeSamples/channels2.go /START OMIT/,/END OMIT/
 
 * Any questions until now?
 
-.image questionsgopher.jpeg 400 600
+.image images/questionsgopher.jpeg 400 600
 
 * Understanding Concurrency & Parallelism
 
@@ -99,11 +99,11 @@ Adding channel to get the responses instead of an array.
 
 * Example (Concurrency)
 
-.play pingpong.go /START OMIT/,/END OMIT/
+.play codeSamples/pingpong.go /START OMIT/,/END OMIT/
 
 * Visualising ping pong match
 
-.image titles/conc_latest.gif
+.image images/conc_latest.gif
 
 * Recap of Parallelism
 - Doing a lot of things at the same time
@@ -112,11 +112,11 @@ Adding channel to get the responses instead of an array.
 
 * Example (Parallelism)
 
-.play fib.go /START OMIT/,/END OMIT/
+.play codeSamples/fib.go /START OMIT/,/END OMIT/
 
 * Visualising fibonnaci calculation
 
-.image titles/par_lat.gif
+.image images/par_lat.gif
 
 * Concurrency with parallelism
 - It is possible to run your concurrent code in parallel
@@ -129,7 +129,7 @@ Adding channel to get the responses instead of an array.
 
 * Questions until now?
 
-.image questionsgopher.jpeg 400 600
+.image images/questionsgopher.jpeg 400 600
 
 
 * The Go Scheduler
@@ -144,18 +144,18 @@ Adding channel to get the responses instead of an array.
 
 * M:P Threading
 
-.image titles/m-n.png 500 800
+.image images/m-n.png 500 800
 
 
 * Go Routines States
 
-.image titles/m-n1.png 500 800
+.image images/m-n1.png 500 800
 
 
 
 * How do OS threads know where to pick up goroutines from?
 
-.image titles/gopher-thinking.png 300 500
+.image images/gopher-thinking.png 300 500
 
 
 
@@ -167,7 +167,7 @@ Adding channel to get the responses instead of an array.
 
 * Where does these Local Run Queues exist?
 
-.image titles/gopher-thinking.png 300 500
+.image images/gopher-thinking.png 300 500
 
 
 * The Processor(P) object
@@ -177,17 +177,17 @@ Adding channel to get the responses instead of an array.
 - Resource required by OS threads to run Go code
 - Stores goroutines that are runnable (LRQ)
 
-.image titles/p.png 250 200
+.image images/p.png 250 200
 
 
 * M:P:N threading
 
-.image titles/MNP.png 550 1000
+.image images/MNP.png 550 1000
 
 
 * Where does the Go Scheduler fit in?
 
-.image titles/exe.png
+.image images/exe.png
 
 
 * What does this scheduler bring to the table?
@@ -198,7 +198,7 @@ Adding channel to get the responses instead of an array.
 
 * Questions until now?
 
-.image questionsgopher.jpeg 400 600
+.image images/questionsgopher.jpeg 400 600
 
 
 * Gotchas
@@ -215,17 +215,17 @@ Adding channel to get the responses instead of an array.
 
 * Uber
 
-.image success/uber.png 500 800
+.image images/uber.png 500 800
 
 * Twitch
 
-.image success/twitch.png 500 1000
+.image images/twitch.png 500 1000
 
 * Others
 
-.image success/twitter.png 500 900
+.image images/twitter.png 500 900
 
 * That's all from our side.
 
-.image micdrop.png 600 600
+.image images/micdrop.png 600 600
 
